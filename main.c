@@ -3,33 +3,37 @@ void add();
 void view();
 void search();
 void reset();
-int caller(int selection)
+int caller()
 {
+    int selection;
+    printf("\n\nPlease select the required option\n");
+    printf("1. Search a contact\n2. View all contacts\n3. Add contact\n4. Edit a contact\n5. Delete a contact\n");
+    printf("6. Starred contacts\n7. Manage groups\n8. Merge contacts\n9. Recenty views\n10. Reset everything to default\n11. Close the directory");
+    printf("\n\nEnter your selected choice: ");
+    scanf("%d",&selection);
     switch(selection)
     {
-	case(1):
+	case(3):
 	    add();
+	    caller();
 	    break;
 	case(2):
 	    view();
+	    caller();
 	    break;
-	case(3):
+	case(1):
 	    search();
+	    caller();
 	    break;
 	case(10):
 	    reset();
+	    caller();
 	    break;
     }
 }
 int main()
 {
-    int selection;
     printf("Welcome to telephone directory\n");
-    printf("Please select the required option\n");
-    printf("1. Add a new number\n2. View all the numbers\n3. Search a number\n");
-    printf("10. Reset everything to default\n");
-    printf("Enter your selected choice: ");
-    scanf("%d",&selection);
-    caller(selection);
+    caller();
     return 0;
 }
