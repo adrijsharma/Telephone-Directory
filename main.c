@@ -2,6 +2,7 @@
 void add();
 void view();
 void search();
+void reset();
 int caller(int selection)
 {
     switch(selection)
@@ -15,6 +16,9 @@ int caller(int selection)
 	case(3):
 	    search();
 	    break;
+	case(10):
+	    reset();
+	    break;
     }
 }
 int main()
@@ -23,6 +27,7 @@ int main()
     printf("Welcome to telephone directory\n");
     printf("Please select the required option\n");
     printf("1. Add a new number\n2. View all the numbers\n3. Search a number\n");
+    printf("10. Reset everything to default\n");
     printf("Enter your selected choice: ");
     scanf("%d",&selection);
     caller(selection);
