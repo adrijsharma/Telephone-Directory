@@ -1,0 +1,8 @@
+adrij sharma	0234567899	-	aa	-	-	00/00/0000
+amrasha sharma	1234567890	9999888777	-	-	-	-
+sivani channamsetty	1234512345	1234567891	aa	-	cs-engineer	00/00/0000
+adrij kak	0987654321	0987654322	asss	5-oo-kk-ll	ilk	90/90/9000
+ajay chajjed	1234567890	3456789012	AAA	QQQQQQQQQQ	kk	12/12/1222
+akshat garg	1111111111	2222222222	qqqqqq	wwwwwww	kk	0000000
+amitha jain	5555555555	8888888888	jhgfdsa	kjjhgfddf	-	12/12/1111
+mallika dhupar	8888666666	9999666666	mallika@gmail.com	Ganesh appartment, Agra	Actor	05/07/1999
