@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-
+#include<math.h>
 struct data_base
 {
-  char name[50];	
+  char name[55];	
   char phone1[11];
   char phone2[11];
   char email[50];
@@ -60,7 +60,7 @@ int string_compare(char array1[100], char array2[100])
   return compare;
 }
 
-
+//checks whether similar phone is there or not
 void similar_phone(char phone_input[])
 {
   FILE* fp=fopen("data_base.txt","r");
