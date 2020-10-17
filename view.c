@@ -4,26 +4,15 @@
 
 struct Contact_Details
 {
-  char name[50];
-  char phone_number1[11];
-  char phone_number2[11];
-  char email_address[40];
-  char residential_address[175];
-  char occupation[175];
-  char date_of_birth[11];
+  char name[50],phone_number1[11], phone_number2[11], email_address[40], residential_address[175], occupation[175], date_of_birth[11];
 };
 
 int main(void)
 {
   //View function.
   int search_choice, i, number_of_contacts, index=0, search_array[100];
-  printf("Please select the appropriate option to search through in the directory\n");
-  printf("Enter\n");
-  printf("1 for searching through NAME\n");
-  printf("2 for searching through PHONE NUMBER\n");
-  printf("3 for searching through EMAIL ADDRESS\n");
-  printf("4 for searching through OCCUPATION\n");
-  printf("5 for searching through DATE OF BIRTH\n");
+  printf("Please select the appropriate option to search through in the directory\nEnter\n");
+  printf("1 for searching through NAME\n2 for searching through PHONE NUMBER\n3 for searching through EMAIL ADDRESS\n4 for searching through OCCUPATION\n5 for searching through DATE OF BIRTH\n");
   scanf("%d",&search_choice);
   struct Contact_Details contacts[number_of_contacts];
   switch(search_choice)
@@ -113,10 +102,9 @@ int main(void)
     printf("The following are the details:\n");
     for(i=0;i<index;i++)
     {
-      printf("Name: %s\n",contacts[search_array[i]].name);
-      printf("Phone Number: %s\n",contacts[search_array[i]].phone_number1);
+      printf("Name: %s\nPhone Number: %s\n",contacts[search_array[i]].name,contacts[search_array[i]].phone_number1);
       if(contacts[search_array[i]].phone_number2[0]!='*')
-        printf("              %s\n",contacts[search_array[i]].phone_number2);
+        printf("Phone Number2: %s\n",contacts[search_array[i]].phone_number2);
       if(contacts[search_array[i]].email_address[0]!='*')
         printf("Email Address: %s",contacts[search_array[i]].email_address);
       if(contacts[search_array[i]].residential_address[0]!='*')
